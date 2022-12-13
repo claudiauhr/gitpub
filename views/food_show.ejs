@@ -14,16 +14,12 @@
   </style>
 </head>
 <body>
-    <h1>Welcome to gitPub</h1>
-    <ul>
-        <%for(let i = 0; i < allDrinks.length; i++) { %>
-        <li>
-            <a href="/drinks/<%=i%>"><%=allDrinks[i].name%></a>
-        </li>
-        <%}%>
-    </ul>
+    <h1>At foo food</h1>
+    <h2><%=food.name; %>;</h2>
+    <img src="<%=food.image; %>.jpg" alt="">
+    <h3><%=food.price%></h3>
     <footer>
-        <a href="/food">Back to Food Menu</a>
+        <a href="/food">Back to Menu</a>
     </footer>
 </body>
 </html>

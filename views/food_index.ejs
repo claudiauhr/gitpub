@@ -9,21 +9,21 @@
 <style type="text/css">
     body {
       color: blanchedalmond;
-      background-color: steelblue;
+      background-color: #6746b4;
     }
   </style>
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
     <ul>
-        <%for(let i = 0; i < allDrinks.length; i++) { %>
+        <%for(let i = 0; i < allFood.length; i++) { %>
         <li>
-            <a href="/drinks/<%=i%>"><%=allDrinks[i].name%></a>
+            <a href="/food/<%=i%>"><%=allFood[i].name%></a>
         </li>
         <%}%>
     </ul>
     <footer>
-        <a href="/food">Back to Food Menu</a>
+        <a href="/drinks">Back to Drinks Menu</a>
     </footer>
 </body>
 </html>
