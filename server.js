@@ -9,12 +9,17 @@ const port = 3000
 //     res.send('Welcome to the Github App!')
 // })
 
-app.get("/drinks/:indexOfDrinksArray", (req, res) => {
+app.get("/drinks", (req, res) => {
     res.render("drinks_index.ejs", {
         allDrinks: drinks,
     })
 })
 
+app.get("/drinks/:indexOfDrinksArray", (req, res) =>{
+    res.render("drinks_show.ejs", {
+        drink: drinks[req.params.indexOfDrinksArray],
+    })
+})
 
 app.listen(port, () => {
     console.log("Server is listening.")
